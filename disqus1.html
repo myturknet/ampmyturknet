@@ -1,0 +1,45 @@
+<html><head><script src="//myturknet.disqus.com/embed.js" data-timestamp="1475629549991"></script><link rel="stylesheet" href="//a.disquscdn.com/next/embed/styles/loading.8023a7350e47171f7bb79707886cd7c5.css"><script src="//a.disquscdn.com/next/embed/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head><body><div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;version=b094b7db1b29903d74c28588186c9e80&amp;f=myturknet&amp;t_u=https%3A%2F%2Fcdn.rawgit.com%2FBloggerEklentileri%2Feeklentileri-html%2Fmaster%2Fdisqus_amp2.html%3Fshortname%3Dmyturknet&amp;t_d=&amp;t_t=&amp;s_o=default" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 451px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+window.addEventListener('message', receiveMessage, false);
+function receiveMessage(event) {
+	if (event.data) {
+		var msg;
+		try {
+			msg = JSON.parse(event.data);
+		} catch (err) {
+			// Do nothing
+		}
+		if (!msg)
+			return false;
+
+		if (msg.name === 'resize') {
+			window.parent.postMessage({
+			  sentinel: 'amp',
+			  type: 'embed-size',
+			  height: msg.data.height
+			}, '*');
+		}
+	}
+}
+</script>
+<script>
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+var disqus_config = function () { 
+	this.page.url = getQueryVariable("url");
+};
+(function() {
+	var d = document, s = d.createElement('script');
+	s.src = '//' + getQueryVariable("shortname") + '.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+<iframe style="display: none;"></iframe><iframe id="dsq-app4" name="dsq-app4" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/home/forums/kompi-design/?utm_source=disqus_embed" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 100% !important; position: fixed !important; top: 0px !important; right: 0px !important; left: auto !important; bottom: auto !important; z-index: 2147483647 !important; display: none !important;"></iframe></body></html>
