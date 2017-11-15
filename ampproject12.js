@@ -57,13 +57,3 @@ function gb(a){a.a&&(a.H||a.attemptChangeHeight(0).then(function(){a.collapse()}
 Z.prototype.upgradeCallback=function(){var a=this,b=this.element.getAttribute("type");if(!b)return null;if(!Ga[b]||!Ga[b](this.win,this.element))return new Y(this.element);var c="amp-ad-network-"+b+"-impl";this.element.setAttribute("data-a4a-upgrade-type",c);return C(this.win,"extensions").loadElementClass(c).then(function(b){return new b(a.element)}).catch(function(c){A().error(a.element.tagName,"Unable to load ad implementation for type ",b,", falling back to 3p, error: ",c);return new Y(a.element)})};
 Z.prototype.isLayoutSupported=function(a){return Wa(a)};Z.prototype.buildCallback=function(){this.element.getAttribute("type")};AMP.registerElement("amp-ad",Z);AMP.registerElement("amp-embed",Z);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

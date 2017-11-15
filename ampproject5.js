@@ -24,13 +24,3 @@ g.firstLayoutCompleted=function(){};
 function W(a,c,b){if(a.u)if(100>c)r().error("amp-iframe","Ignoring embed-size request because the resize height is less than 100px. If you are using amp-iframe to display ads, consider using amp-ad instead.",a.element);else{var d,e;void 0!==c&&(d=Math.max(a.element.offsetHeight-a.a.offsetHeight+c,c));void 0!==b&&(e=Math.max(a.element.offsetWidth-a.a.offsetWidth+b,b));void 0!==d||void 0!==e?a.attemptChangeSize(d,e).then(function(){void 0!==d&&a.element.setAttribute("height",d);void 0!==e&&a.element.setAttribute("width",
 e)},function(){}):r().error("amp-iframe","Ignoring embed-size request becauseno width or height value is provided",a.element)}else r().error("amp-iframe","Ignoring embed-size request because this iframe is not resizable",a.element)}function U(a){var c=a.element.getLayoutBox();return 10<c.width&&10<c.height?!1:!0}function V(a,c){var b=c||"";a.setAttribute("sandbox",b)}var T=[[300,250],[320,50],[300,50],[320,100]];AMP.registerElement("amp-iframe",R);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

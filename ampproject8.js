@@ -4,13 +4,3 @@ function p(a,c){var d;d=void 0===d?"source":d;g().assert(null!=a,"%s %s must be 
 q.prototype.layoutCallback=function(){var a=this;return this.c.expandAsync(p(this.element.getAttribute("src"),this.element)).then(function(c){var d={};a.element.hasAttribute("credentials")&&(d.credentials=a.element.getAttribute("credentials"));d.credentials&&(d.requireAmpResponseSourceOrigin=!0);return h(a.win,"xhr").fetchJson(c,d)}).then(function(c){g().assert("object"==typeof c&&Array.isArray(c.items),"Response must be {items: []} object %s %s",a.element,c);var d=c.items;return h(a.win,"templates").findAndRenderTemplateArray(a.element,
 d).then(a.b.bind(a))})};q.prototype.b=function(a){var c=this;a.forEach(function(a){a.hasAttribute("role")||a.setAttribute("role","listitem");c.a.appendChild(a)});this.getVsync().measure(function(){var a=c.a.scrollHeight;a>c.element.offsetHeight&&c.attemptChangeHeight(a).catch(function(){})})};AMP.registerElement("amp-list",q);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

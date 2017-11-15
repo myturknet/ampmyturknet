@@ -53,13 +53,3 @@ function Pa(a){var c=a.I.getImage(),b=a.I.getImageBoxWithOffset(),d=new E(a.elem
 transform:""});h.appendChild(b);d.add(0,G(a.F,{opacity:H(1,0)}),.1,S);var c=f.top-m,v=G(b,{transform:sa(H(0,f.left-k),H(0,c))}),f=Math.max(.2,Math.min(.8,Math.abs(c)/250*.8));d.add(Math.min(.8-f,.2),function(b,c){v(b);c&&a.B.classList.remove("-amp-ghost")},f,S);d.add(.8,G(h,{opacity:H(1,.01)}),.2,S);e=Math.max(Math.min(Math.abs(c)/250*e,e),300)}d.start(e).thenAlways(function(){a.B&&a.B.classList.remove("-amp-ghost");a.collapse();y(a.element,{opacity:""});y(a.F,{opacity:""});h&&a.element.ownerDocument.body.removeChild(h);
 Ja(a)})}AMP.registerElement("amp-image-lightbox",Z,"amp-image-lightbox{position:fixed!important;z-index:1000!important;top:0!important;left:0!important;bottom:0!important;right:0!important;margin:0!important;padding:0!important;overflow:hidden!important;-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important;-ms-touch-action:none!important;touch-action:none!important;background:rgba(0,0,0,.95);color:#f2f2f2}.-amp-image-lightbox-container{position:absolute;z-index:0;top:0;left:0;right:0;bottom:0;overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}.-amp-image-lightbox-trans{pointer-events:none!important;position:fixed;z-index:1001;top:0;left:0;bottom:0;right:0}.-amp-image-lightbox-caption{position:absolute!important;z-index:2!important;bottom:0!important;left:0!important;right:0!important}.-amp-image-lightbox-caption.-amp-empty,.-amp-image-lightbox-view-mode .-amp-image-lightbox-caption{visibility:hidden}.amp-image-lightbox-caption{background:rgba(0,0,0,.5);max-height:25%;padding:8px}.-amp-image-lightbox-viewer{position:absolute;z-index:1;top:0;left:0;right:0;bottom:0;overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}.-amp-image-lightbox-viewer-image{position:absolute;z-index:1;display:block;-webkit-transform-origin:50% 50%;transform-origin:50% 50%}\n/*# sourceURL=/extensions/amp-image-lightbox/0.1/amp-image-lightbox.css*/");
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

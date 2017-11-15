@@ -109,13 +109,3 @@ function $b(a,b){var c=b.sampleSpec,d=Promise.resolve(!0);if(!c)return d;if(!c.s
 function Y(a,b,c,d,e,f){e=void 0===e?2:e;f=void 0===f?!0:f;return 0>e?(q().error("Maximum depth reached while expanding variables. Please ensure that the variables are not recursive."),b):ra(b,function(b){var k=b.match(/([^(]*)(\([^)]*\))?/),h=k[1];b=k[2]||"";var m=d&&d.vars&&d.vars[h]||c.vars&&c.vars[h]||a.w.vars&&a.w.vars[h]||"";"string"==typeof m&&(m=Y(a,m,c,d,e-1));f?(h=m,h=Array.isArray(h)?h.map(encodeURIComponent).join(","):encodeURIComponent(h)):h=m;return h+b})}
 function X(a){return"AmpAnalytics "+(a.element.getAttribute("id")||"<unknown id>")}function Z(a,b,c,d){if(null===c||void 0===c)c={};for(var e in b)q().assert(d||"iframePing"!=e,"iframePing config is only available to vendor config."),b.hasOwnProperty(e)&&(Array.isArray(b[e])?(Array.isArray(c[e])||(c[e]=[]),c[e]=Z(a,b[e],c[e],d)):"[object Object]"===ca.call(b[e])?("[object Object]"===ca.call(c[e])||(c[e]={}),c[e]=Z(a,b[e],c[e],d)):c[e]=b[e]);return c}AMP.registerElement("amp-analytics",Vb);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

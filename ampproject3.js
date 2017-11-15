@@ -25,13 +25,3 @@ function pa(a){for(var b=a.querySelectorAll("input,select,textarea,fieldset"),c=
 function W(a,b){b=void 0===b?!1:b;var c=!1,d=a.classList.contains("user-valid")?"valid":a.classList.contains("user-invalid")?"invalid":"none",e=a.checkValidity();"valid"!=d&&e?(a.classList.add("user-valid"),a.classList.remove("user-invalid"),c="invalid"==d):"invalid"==d||e||(a.classList.add("user-invalid"),a.classList.remove("user-valid"),c=!0);if(a.validity)for(var f in a.validity)a.classList.toggle(f,a.validity[f]);if(b&&c){f=B(a);for(var g=0;g<f.length;g++)W(f[g]);a.form&&W(a.form)}return e}
 function sa(a){da(a.document,function(a){t(a.forms).forEach(function(a,b){new ma(a,"amp-form-"+b)})})}(function(a){return v(a,"amp-form",function(){ba(a)&&fa(a.document,function(){sa(a)});return{}})})(AMP.win);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

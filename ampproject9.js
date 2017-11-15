@@ -72,13 +72,3 @@ typeof n||"string"===typeof n||"number"===typeof n)l+=this.renderTokens(a[4],d.p
 e[a[1]],null!=a))return this.renderTokens(this.parse(a),d,e,a)};g.prototype.unescapedValue=function p(c,d){c=d.lookup(c[1]);if(null!=c)return a.sanitizeUnescaped?a.sanitizeUnescaped(c):c};g.prototype.escapedValue=function C(c,d){c=d.lookup(c[1]);if(null!=c)return a.escape(c)};g.prototype.rawValue=function x(a){return a[1]};a.name="mustache.js";a.version="2.2.0";a.tags=["{{","}}"];var R=new g;a.clearCache=function(){return R.clearCache()};a.parse=function(a,c){return R.parse(a,c)};a.render=function(a,
 c,d){if("string"!==typeof a)throw new TypeError('Invalid template! Template should be a "string" but "'+e(a)+'" was given as the first argument for mustache#render(template, view, partials)');return R.render(a,c,d)};a.to_html=function Q(d,e,f,g){var h=a.render(d,e,f);if(c(g))g(h);else return h};a.escape=d;a.sanitizeUnescaped=null;a.setUnescapedSanitizier=function H(c){a.sanitizeUnescaped=c};a.Scanner=v;a.Context=n;a.Writer=g});Ja.setUnescapedSanitizier(function(b){return xa.sanitizeWithPolicy(b,function(a){return-1==Aa.indexOf(a)?null:{tagName:a,attribs:[]}})});function Ka(b){AMP.BaseTemplate.apply(this,arguments)}ca(Ka,AMP.BaseTemplate);Ka.prototype.compileCallback=function(){this.A=this.element.innerHTML;Ja.parse(this.A)};Ka.prototype.render=function(b){b=Ja.render(this.A,b);var a=Fa(b);b=this.win.document.createElement("div");b.innerHTML=a;return this.unwrap(b)};AMP.registerTemplate("amp-mustache",Ka);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>

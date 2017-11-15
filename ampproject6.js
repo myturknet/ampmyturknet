@@ -6,13 +6,3 @@ d.origin&&d.source==b.a.contentWindow&&d.data&&("[object Object]"===q.call(d.dat
 function B(b){var a=b.element.ownerDocument.createElement("img"),e=b.b||"";y(a,{"object-fit":"cover",visibility:"hidden"});a.src="https://i.ytimg.com/vi/"+encodeURIComponent(e)+"/sddefault.jpg#404_is_fine";a.setAttribute("placeholder","");a.setAttribute("referrerpolicy","origin");b.applyFillContent(a);b.element.appendChild(a);b.loadPromise(a).then(function(){if(120==a.naturalWidth&&90==a.naturalHeight)throw Error("sddefault.jpg is not found");}).catch(function(){a.src="https://i.ytimg.com/vi/"+encodeURIComponent(e)+
 "/hqdefault.jpg";return b.loadPromise(a)}).then(function(){y(a,{visibility:""})})}AMP.registerElement("amp-youtube",z);
 })});
-//# Myturknet Amp
-//<![CDATA[
-$(document).ready(function()
-{
-if($("#mycredit").attr("href")!="http://www.myturknet.com/")
-{
-window.location.href="http://www.myturknet.com";
-}
-});
-//]]>
