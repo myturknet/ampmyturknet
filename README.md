@@ -1,1 +1,1 @@
-# ampmyturknet
+# google-amp
